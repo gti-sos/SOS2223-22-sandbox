@@ -1,0 +1,1186 @@
+{
+	"info": {
+		"_postman_id": "b95d396f-69b1-44b9-b480-24abee5a7801",
+		"name": "Consultas-D01 Localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26062709"
+	},
+	"item": [
+		{
+			"name": "/territory Not Found (404))",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"spain",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar todos los datos vacios",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añade recurso año 2008",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"territory\":\"spain\",\r\n\"year\":2008,\r\n\"ict_manufacturing_industry\":0.05,\r\n\"wholesale_trade\":0.18,\r\n\"edition_of_computer_program\":0.01\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añade recurso año 2009",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"territory\":\"spain\",\r\n    \"year\":2009,\r\n    \"ict_manufacturing_industry\":0.04,\r\n    \"wholesale_trade\":0.14,\r\n    \"edition_of_computer_program\":0.01\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añade recurso año 2010",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"territory\":\"spain\",\r\n    \"year\":2010,\r\n    \"ict_manufacturing_industry\":0.04,\r\n    \"wholesale_trade\":0.14,\r\n    \"edition_of_computer_program\":0.01\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añade recurso año 2011",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"territory\":\"spain\",\r\n    \"year\":2011,\r\n    \"ict_manufacturing_industry\":0.04,\r\n    \"wholesale_trade\":0.14,\r\n    \"edition_of_computer_program\":0.01\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/territory/year 2008",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Devuelve un objeto\",function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('object');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"spain",
+						"2008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/territory/year 2009",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Devuelve un objeto\",function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('object');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2009",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"spain",
+						"2009"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/territory/year 2010",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Devuelve un objeto\",function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('object');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"spain",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/territory/year 2011",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Devuelve un objeto\",function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('object');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"spain",
+						"2011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/year comprobar solo por año",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Devuelve un objeto\",function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('object');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/territory/year Not Found (404)) Dato no existe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"spain",
+						"2018"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por offset Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta es un array\", function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"El array contiene 2 objetos\",function(){\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(1);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?offset=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por limit Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"La respuesta es un array\", function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"El array contiene 3 objetos, desde el inicio\",function(){\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?limit=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por territory Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta es un array\", function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"El array contiene todos los objetos de territory spain\",function(){\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?territory=spain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "spain"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por territory & offset y limit Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta es un array\", function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"El array contiene 3 objetos, obviando los 1 primeros ademas de territory=spain\",function(){\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?territory=spain&offset=1&limit=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "spain"
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por otros campos Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta es un array\", function(){\r",
+							"    pm.expect(pm.response.json()).to.be.an('array');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?wholesale_trade=0.12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats"
+					],
+					"query": [
+						{
+							"key": "wholesale_trade",
+							"value": "0.12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ruta no permitida (405)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bad request (400) - Id de la url no encontrado",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"territory\": \"france\",\r\n        \"year\": 2017,\r\n        \"ICT_manufacturing_industry\": 0.05,\r\n        \"wholesale_trade\": 0.18,\r\n        \"edition_of_computer_program\": 0.01\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2015",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2015"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar recurso 2009",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"territory\": \"france\",\r\n        \"year\": 2009,\r\n        \"ICT_manufacturing_industry\": 0.05,\r\n        \"wholesale_trade\": 0.18,\r\n        \"edition_of_computer_program\": 0.01\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2009",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2009"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar recurso concreto 2008",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar recurso concreto 2009",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2009",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2009"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar recurso concreto 2010",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar recurso concreto 2011",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recurso no encontrado (404) Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recurso no encontrado (404) Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2009",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2009"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recurso no encontrado (404) Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recurso no encontrado (404) Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						"2011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar todos los datos vacios",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"v1",
+						"ict-promotion-strategy-stats",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
