@@ -7,8 +7,9 @@
   
   "scripts": {
     "start": "node nodejs/index",
+    "test-jobs-companies-innovation-stats": "npx newman run ./tests/backend.json",
     "test-ict-promotion-strategy-stats": "npx newman run ./tests/backend-ict-promotion-strategy-stats.json",
-    "test": "npm run test-ict-promotion-strategy-stats" 
+    "test": "npm run test-ict-promotion-strategy-stats && npm  run test-jobs-companies-innovation-stats" 
     
   },
   "repository": {
