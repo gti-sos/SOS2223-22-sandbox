@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 // Redirect
 app.get(BASE_API_URL + "/ict-promotion-strategy-stats/docs", (req, res) => {
     console.log("New GET request to /ict-promotion-strategy-stats/docs");
-    res.redirect("https://documenter.getpostman.com/view/26062709/2s93RNzFC5");
+    res.redirect("https://documenter.getpostman.com/view/26062709/2s93XsY6B6");
 });
 
 

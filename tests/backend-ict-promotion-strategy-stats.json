@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "b95d396f-69b1-44b9-b480-24abee5a7801",
-		"name": "Consultas-D01 Localhost",
+		"_postman_id": "9f730f4d-e592-47aa-a9f8-eae2057115f3",
+		"name": "Servidor CGM",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26062709"
 	},
 	"item": [
 		{
-			"name": "/territory Not Found (404))",
+			"name": "/territory Not Found (404)) Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -25,12 +25,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/spain/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -43,7 +44,7 @@
 			"response": []
 		},
 		{
-			"name": "Mostrar todos los datos vacios",
+			"name": "Mostrar todos los datos vacios Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -62,12 +63,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -79,7 +81,7 @@
 			"response": []
 		},
 		{
-			"name": "Añade recurso año 2008",
+			"name": "Añade recurso año 2008 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -107,12 +109,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -123,7 +126,7 @@
 			"response": []
 		},
 		{
-			"name": "Añade recurso año 2009",
+			"name": "Añade recurso año 2009 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -151,12 +154,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -167,7 +171,7 @@
 			"response": []
 		},
 		{
-			"name": "Añade recurso año 2010",
+			"name": "Añade recurso año 2010 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -195,12 +199,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -211,7 +216,7 @@
 			"response": []
 		},
 		{
-			"name": "Añade recurso año 2011",
+			"name": "Añade recurso año 2011 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -239,12 +244,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -255,7 +261,7 @@
 			"response": []
 		},
 		{
-			"name": "/territory/year 2008",
+			"name": "/territory/year 2008 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -277,12 +283,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2008",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/spain/2008",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -295,7 +302,7 @@
 			"response": []
 		},
 		{
-			"name": "/territory/year 2009",
+			"name": "/territory/year 2009 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -317,12 +324,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2009",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/spain/2009",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -335,7 +343,7 @@
 			"response": []
 		},
 		{
-			"name": "/territory/year 2010",
+			"name": "/territory/year 2010 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -357,12 +365,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2010",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/spain/2010",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -375,7 +384,7 @@
 			"response": []
 		},
 		{
-			"name": "/territory/year 2011",
+			"name": "/territory/year 2011 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -397,12 +406,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2011",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/spain/2011",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -415,7 +425,7 @@
 			"response": []
 		},
 		{
-			"name": "/year comprobar solo por año",
+			"name": "/year comprobar solo por año Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -437,12 +447,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2008",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2008",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -454,7 +465,7 @@
 			"response": []
 		},
 		{
-			"name": "/territory/year Not Found (404)) Dato no existe",
+			"name": "/territory/year Not Found (404)) Dato no existe Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -472,12 +483,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/spain/2018",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/spain/2018",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -490,7 +502,7 @@
 			"response": []
 		},
 		{
-			"name": "Busqueda por offset Copy",
+			"name": "Busqueda por offset Copy 2",
 			"event": [
 				{
 					"listen": "test",
@@ -517,12 +529,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?offset=2",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats?offset=2",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -539,7 +552,7 @@
 			"response": []
 		},
 		{
-			"name": "Busqueda por limit Copy",
+			"name": "Busqueda por limit Copy 2",
 			"event": [
 				{
 					"listen": "test",
@@ -567,12 +580,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?limit=3",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats?limit=3",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -589,7 +603,7 @@
 			"response": []
 		},
 		{
-			"name": "Busqueda por territory Copy",
+			"name": "Busqueda por territory Copy 2",
 			"event": [
 				{
 					"listen": "test",
@@ -616,12 +630,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?territory=spain",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats?territory=spain",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -638,7 +653,7 @@
 			"response": []
 		},
 		{
-			"name": "Busqueda por territory & offset y limit Copy",
+			"name": "Busqueda por territory & offset y limit Copy 2",
 			"event": [
 				{
 					"listen": "test",
@@ -665,12 +680,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?territory=spain&offset=1&limit=3",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats?territory=spain&offset=1&limit=3",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -695,7 +711,7 @@
 			"response": []
 		},
 		{
-			"name": "Busqueda por otros campos Copy",
+			"name": "Busqueda por otros campos Copy 2",
 			"event": [
 				{
 					"listen": "test",
@@ -718,12 +734,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats?wholesale_trade=0.12",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats?wholesale_trade=0.14",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -732,7 +749,7 @@
 					"query": [
 						{
 							"key": "wholesale_trade",
-							"value": "0.12"
+							"value": "0.14"
 						}
 					]
 				}
@@ -740,7 +757,7 @@
 			"response": []
 		},
 		{
-			"name": "Ruta no permitida (405)",
+			"name": "Ruta no permitida (405) Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -758,12 +775,13 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -775,7 +793,7 @@
 			"response": []
 		},
 		{
-			"name": "Bad request (400) - Id de la url no encontrado",
+			"name": "Bad request (400) - Id de la url no encontrado Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -802,12 +820,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2015",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2015",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -819,7 +838,7 @@
 			"response": []
 		},
 		{
-			"name": "Actualizar recurso 2009",
+			"name": "Actualizar recurso 2009 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -846,12 +865,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2009",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2009",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -863,7 +883,7 @@
 			"response": []
 		},
 		{
-			"name": "Borrar recurso concreto 2008",
+			"name": "Borrar recurso concreto 2008 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -881,12 +901,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2008",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2008",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -898,7 +919,7 @@
 			"response": []
 		},
 		{
-			"name": "Borrar recurso concreto 2009",
+			"name": "Borrar recurso concreto 2009 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -916,12 +937,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2009",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2009",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -933,7 +955,7 @@
 			"response": []
 		},
 		{
-			"name": "Borrar recurso concreto 2010",
+			"name": "Borrar recurso concreto 2010 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -951,12 +973,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2010",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2010",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -968,7 +991,7 @@
 			"response": []
 		},
 		{
-			"name": "Borrar recurso concreto 2011",
+			"name": "Borrar recurso concreto 2011 Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -986,12 +1009,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2011",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2011",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -1003,7 +1027,7 @@
 			"response": []
 		},
 		{
-			"name": "Recurso no encontrado (404) Copy",
+			"name": "Recurso no encontrado (404) Copy 2",
 			"event": [
 				{
 					"listen": "test",
@@ -1022,12 +1046,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2008",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2008",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -1039,7 +1064,7 @@
 			"response": []
 		},
 		{
-			"name": "Recurso no encontrado (404) Copy 2",
+			"name": "Recurso no encontrado (404) Copy 3",
 			"event": [
 				{
 					"listen": "test",
@@ -1058,12 +1083,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2009",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2009",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -1075,7 +1101,7 @@
 			"response": []
 		},
 		{
-			"name": "Recurso no encontrado (404) Copy 2",
+			"name": "Recurso no encontrado (404) Copy 3",
 			"event": [
 				{
 					"listen": "test",
@@ -1094,12 +1120,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2010",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2010",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -1111,7 +1138,7 @@
 			"response": []
 		},
 		{
-			"name": "Recurso no encontrado (404) Copy 2",
+			"name": "Recurso no encontrado (404) Copy 3",
 			"event": [
 				{
 					"listen": "test",
@@ -1130,12 +1157,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/2011",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/2011",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
@@ -1147,7 +1175,7 @@
 			"response": []
 		},
 		{
-			"name": "Mostrar todos los datos vacios",
+			"name": "Mostrar todos los datos vacios Copy",
 			"event": [
 				{
 					"listen": "test",
@@ -1166,12 +1194,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:12345/api/v1/ict-promotion-strategy-stats/",
-					"protocol": "http",
+					"raw": "https://sos2223-22-cgm.appspot.com/api/v1/ict-promotion-strategy-stats/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"sos2223-22-cgm",
+						"appspot",
+						"com"
 					],
-					"port": "12345",
 					"path": [
 						"api",
 						"v1",
