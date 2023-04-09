@@ -1,0 +1,1104 @@
+{
+	"info": {
+		"_postman_id": "3939d3f6-832d-4763-9735-b08a231bc918",
+		"name": "SOS2223 Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14969056"
+	},
+	"item": [
+		{
+			"name": "GET a lista de recursos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar respuesta de /jobs-companies-innovation-stats\", function() {\r",
+							"     pm.expect([200, 404]).to.include(pm.response.code);\r",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.contain('application/json');\r",
+							"\r",
+							"    const data = pm.response.json();\r",
+							"\r",
+							"    pm.test(\"Si se devuelven datos, se espera que la respuesta no sea un array vacío\", function() {\r",
+							"        if (data.length > 0) {\r",
+							"            pm.expect(data).to.not.eql([]);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							"    pm.test(\"Si no se encuentran datos, se devuelve un array vacío\", function() {\r",
+							"        if (data.error) {\r",
+							"            pm.expect(data).to.eql({error: \"No se encontraron resultados para la búsqueda\"});\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							"   \r",
+							"    \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a la lista de recursos Polonia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que el POST fue exitoso\", function() {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"territory\": \"Polonia\",\r\n    \"year\": 2018,\r\n    \"jobs_industry\": 2345,\r\n    \"companies_with_innovations\": 21,\r\n    \"temporary_employment\": 421.1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a la lista de recursos Tokio",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que el POST fue exitoso\", function() {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"territory\": \"Tokio\",\r\n    \"year\": 2008,\r\n    \"jobs_industry\": 345542,\r\n    \"companies_with_innovations\": 95,\r\n    \"temporary_employment\": 41.1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a la lista de recursos Madrid",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que el POST fue exitoso\", function() {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"territory\": \"Madrid\",\r\n    \"year\": 2010,\r\n    \"jobs_industry\": 345542,\r\n    \"companies_with_innovations\": 5,\r\n    \"temporary_employment\": 42.1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a la lista de recursos Varsovia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que el POST fue exitoso\", function() {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"territory\": \"Varsovia\",\r\n    \"year\": 2002,\r\n    \"jobs_industry\": 3455232,\r\n    \"companies_with_innovations\": 12,\r\n    \"temporary_employment\": 4123.1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a lista de recursos Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar respuesta de /jobs-companies-innovation-stats\", function() {\r",
+							"     pm.expect([200, 404]).to.include(pm.response.code);\r",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.contain('application/json');\r",
+							"\r",
+							"    const data = pm.response.json();\r",
+							"\r",
+							"    pm.test(\"Si se devuelven datos, se espera que la respuesta no sea un array vacío\", function() {\r",
+							"        if (data.length > 0) {\r",
+							"            pm.expect(data).to.not.eql([]);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							"    pm.test(\"Si no se encuentran datos, se devuelve un array vacío\", function() {\r",
+							"        if (data.error) {\r",
+							"            pm.expect(data).to.eql({error: \"No se encontraron resultados para la búsqueda\"});\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							"   \r",
+							"    \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET busqueda por un campo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"La respuesta debe ser 200 Ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta debe ser un array de un objeto\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('array').that.has.lengthOf(1);\r",
+							"    pm.expect(jsonData[0]).to.be.an('object');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?territory=Polonia",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "Polonia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET busqueda por dos campos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"La respuesta debe ser 200 Ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta debe ser  un objeto\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?territory=Polonia&year=2018",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "Polonia"
+						},
+						{
+							"key": "year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET busqueda por tres campos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"La respuesta debe ser 200 Ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta debe ser un array de un objeto\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?territory=Polonia&year=2018&jobs_industry=2345",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "Polonia"
+						},
+						{
+							"key": "year",
+							"value": "2018"
+						},
+						{
+							"key": "jobs_industry",
+							"value": "2345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET busqueda por cuatro campos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"La respuesta debe ser 200 Ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta debe ser un array de un objeto\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?territory=Polonia&year=2018&jobs_industry=2345&companies_with_innovations=21",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "Polonia"
+						},
+						{
+							"key": "year",
+							"value": "2018"
+						},
+						{
+							"key": "jobs_industry",
+							"value": "2345"
+						},
+						{
+							"key": "companies_with_innovations",
+							"value": "21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET busqueda por Todos los campos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"La respuesta debe ser 200 Ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta debe ser un array de un objeto\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?territory=Polonia&year=2018&jobs_industry=2345&companies_with_innovations=21&temporary_employment=421.1",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "Polonia"
+						},
+						{
+							"key": "year",
+							"value": "2018"
+						},
+						{
+							"key": "jobs_industry",
+							"value": "2345"
+						},
+						{
+							"key": "companies_with_innovations",
+							"value": "21"
+						},
+						{
+							"key": "temporary_employment",
+							"value": "421.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a recurso concreto (Error 404)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que se devuelve un error 404\", function() {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?territory=andaluciaaa",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "territory",
+							"value": "andaluciaaa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paginacion",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que la respuesta es 200 OK y que se devuelven solo 3 objetos\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    var responseData = pm.response.json();\r",
+							"    pm.expect(responseData).to.be.an(\"array\");\r",
+							"    pm.expect(responseData).to.have.lengthOf(3);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats?offset=1&limit=3",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a la lista de recursos (Sin campos esperados ERROR 400)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que se devuelve un error 400 cuando el objeto JSON no tiene los campos esperados\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"    var responseData = pm.response.json();\r",
+							"    pm.expect(responseData.error).to.eql(\"El objeto JSON no tiene los campos esperados\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"territory\": \"malaga\",\r\n        \"year\": 2013,\r\n        \"jobs_industry\": 4534542\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE A recurso especifico",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code DELETE (recurso especifico) is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats/Polonia",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats",
+						"Polonia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a lista de recursos Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar respuesta de /jobs-companies-innovation-stats\", function() {\r",
+							"     pm.expect([200, 404]).to.include(pm.response.code);\r",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.contain('application/json');\r",
+							"\r",
+							"    const data = pm.response.json();\r",
+							"\r",
+							"    pm.test(\"Si se devuelven datos, se espera que la respuesta no sea un array vacío\", function() {\r",
+							"        if (data.length > 0) {\r",
+							"            pm.expect(data).to.not.eql([]);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							"    pm.test(\"Si no se encuentran datos, se devuelve un array vacío\", function() {\r",
+							"        if (data.error) {\r",
+							"            pm.expect(data).to.eql({error: \"No se encontraron resultados para la búsqueda\"});\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							"   \r",
+							"    \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a recurso especifico",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que el PUT fue exitoso\", function() {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"territory\": \"Tokio\",\r\n    \"year\": 2008,\r\n    \"jobs_industry\": 7630300,\r\n    \"companies_with_innovations\": 1110,\r\n    \"temporary_employment\": 12.65\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats/Tokio",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats",
+						"Tokio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a recurso especifico (Error 400)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que se devuelve un error 400 cuando el objeto JSON no tiene los campos esperados\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"    var responseData = pm.response.json();\r",
+							"    pm.expect(responseData.error).to.eql(\"El objeto JSON no tiene los campos esperados\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"year\": 2008,\r\n    \"jobs_industry\": 7630300,\r\n    \"companies_with_innovations\": 1110,\r\n    \"temporary_employment\": 12.65\r\n}"
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats/Alemania",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats",
+						"Alemania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a lista de recursos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que se devuelve un error 405 cuando se hace PUT a una lista de recursos\", function() {\r",
+							"    pm.response.to.have.status(405);\r",
+							"    pm.expect(pm.response.text()).to.eql(\"Method Not Allowed\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a un recurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que se devuelve un error 405 cuando se hace POST a un recurso\", function() {\r",
+							"    pm.response.to.have.status(405);\r",
+							"    pm.expect(pm.response.text()).to.eql(\"Method Not Allowed\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats/2008",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats",
+						"2008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST de  recurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que el POST fue exitoso\", function() {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"territory\": \"Cordoba\",\r\n    \"year\": 2008,\r\n    \"jobs_industry\": 345542,\r\n    \"companies_with_innovations\": 95,\r\n    \"temporary_employment\": 41.1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST de  recurso existente Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar que se devuelve un error 409 cuando ya existe un recurso con los mismos datos\", function() {\r",
+							"    pm.response.to.have.status(409);\r",
+							"    var responseData = pm.response.json();\r",
+							"    pm.expect(responseData.error).to.eql(\"Ya existe un elemento con los mismos datos\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"territory\": \"Cordoba\",\r\n    \"year\": 2008,\r\n    \"jobs_industry\": 345542,\r\n    \"companies_with_innovations\": 95,\r\n    \"temporary_employment\": 41.1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE de recursos Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is (DELETE de recursos) 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Mensaje de delete exitoso\", function () {\r",
+							"    const responseText = pm.response.text();\r",
+							"    const numDeletedPattern = /Se han borrado (\\d+) registros correctamente/;\r",
+							"    pm.expect(responseText).to.match(numDeletedPattern);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sos2223-22.appspot.com/api/v1/jobs-companies-innovation-stats",
+					"protocol": "https",
+					"host": [
+						"sos2223-22",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs-companies-innovation-stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
